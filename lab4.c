@@ -5,7 +5,7 @@
 char s[SIZE];
 int top = -1;
 
-push(char elem)
+void push(char elem)
 {
     s[++top] = elem;
 }
@@ -41,7 +41,7 @@ void main()
     int i = 0, k = 0;
 
     printf("Enter the Infix Expression: ");
-    scanf("%s", &infix);
+    scanf("%s", infix);
 
     push('#');
     while ((ch = infix[i++]) != '\0')
